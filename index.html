@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="es">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Landing page lead After</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto:wght@100..900&display=swap');
+</style>
+
+</head>
+
+<body>
+       
+    <header>
+        <div class="marca">
+            <img class="logo" src="./logo supra.png" alt="">
+            <img class="letraslogo" src="./AFTER El podcast de SupraPixel.png" alt="">
+        </div>
+
+        <div class="social-buttons">
+    <a href="https://youtube.com" target="_blank" class="youtube">
+      <img src="./youtubeframe.png" alt="" width="40" height="">
+    </a>
+    <a href="https://spotify.com" target="_blank" class="spotify">
+      <img src="./spotyframe.png" alt="" width="40" height="">
+    </a>
+    <a href="https://podcasts.apple.com/us/podcast/after/id1532613775" target="_blank" class="applepodcast">
+      <img src="./applepodcastframe.png" alt="" width="40" height="">
+    </a>
+     <a href="https://instagram.com" target="_blank" class="instagram">
+      <img src="./Instagramframe.png" alt="" width="40" height="">
+    </a>
+  </div>
+
+    </header>
+
+ 
+
+<section class="intro2">
+        <div class="contenedor-intro">
+            
+                <h1 class="titulo">AFTER</h1>
+                <h2 class="subtitulo">ESTÁ DE VUELTA</h2>
+                <p> Suprapixel presenta el regreso más esperado del podcast tech más informal, 
+                 descontracturado y completamente fuera de control.</p>
+                 <br>
+                 <br>
+                 <p id="subparrafo">Después de meses de silencio, After vuelve con más anécdotas, rants, tangentes existenciales
+                 y debates innecesarios sobre cuál es el mejor monitor para jugar al Tetris.</p>
+           
+        </div>
+        
+    </section>
+
+    <section class="beneficios">
+        <h2>¿Qué podés esperar?</h2>
+        <ul class="beneficios-grid">
+            <li>🎙️ <br>Charlas de tecnología como solo Suprapixel las puede hacer.</li>
+            <li>🍮️ <br>Mucho Flan. <br>Literal y figurativamente.  </li>
+            <li>📩 <br>Recibí novedades exclusivas sobre tecnología.</li>
+        </ul>
+    </section>
+
+    <section class="info">
+    <div class="bullets">
+        <div class="text-content">
+            <h2>Flan volvió. Y no se calla nada.</h2>    
+            <p>Flan regresa con más teorías, más preguntas raras, y más ganas de llevar la conversación a lugares inesperados.</p>
+            <p><strong>¿Querés escucharlo hablar 15 minutos sobre una cucharita que se le dobló sola? Este es tu podcast.</strong></p>    
+        </div>
+        <img src="./image 28.png" alt="Imagen del podcast">
+    </div>
+</section>
+
+    <section class="testimonios">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <div class="carousel">
+            <div class="carousel-slides">
+                <div class="carousel-slide active">"Suprapixel me ayudó a elegir mi primer celular premium sin arrepentirme.<br>
+                     Explican todo con claridad y sin rodeos.<br>
+                      ¡Un imprescindible para los tech lovers!"<br>
+                       – Martín G., Buenos Aires.
+                    </div>
+
+                <div class="carousel-slide">"Gracias a Suprapixel, entendí qué auriculares realmente valen la pena.<br>
+                     Su análisis es detallado y directo, sin exageraciones. ¡Siempre confío en sus recomendaciones!"<br>
+                      – Sofía R., Córdoba.
+                    </div>
+
+                <div class="carousel-slide">"No hay otro canal que analice gadgets con tanta profundidad y honestidad.<br>
+                     Suprapixel es mi referencia número uno antes de comprar cualquier dispositivo."<br>
+                      – Javier L., Mendoza.
+                    </div>
+                 <div class="carousel-slide" style="color:#fff;">  "Me encanta cómo explican la tecnología sin tecnicismos innecesarios.<br>
+                     Aprendo mucho y me divierto al mismo tiempo. ¡Gran contenido!" <br>
+                     – Camila P., Rosario.
+                     
+                    </div>
+            </div>
+            <button class="carousel-button prev" aria-label="Previous slide">⬅&lt;</button>
+            <button class="carousel-button next" aria-label="Next slide">&gt;➡</button>
+        </div>
+    </section>
+    
+
+<section class="formulario">
+    <h2 class="titulofinal">RECIBI ACCESO ANTICIPADO A AFTER </h2>
+    <p>Si queres recibir por anticipado el acceso AFTER podes completar este formulario para que Flan te escriba y recibir:
+<br>
+<br>
+Noticias exclusivas solo como SupraPixel sabe hacer.
+Mucho Flan, Literal y figurativamente.</p>
+
+    <div class="input-container">
+        <form id="subscribeForm">
+            <input type="text" id="name" placeholder="Nombre Completo" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <textarea id="messageBox" placeholder="¿De qué te gustaría que habláramos?" rows="4"></textarea>
+        </form>
+    </div>
+
+    <div class="checkbox-container">
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="wantsFlanNews"> Quiero recibir noticias de Flan (el editor, no el postre)🍮️
+            </label>
+        </div>
+        <div class="checkbox-group">
+            <label>
+                <input type="checkbox" id="listenedBefore"> Escuché After alguna vez. No soy un improvisado.
+            </label>
+        </div>
+    </div>
+
+    <button type="submit" form="subscribeForm">Enviar</button>
+    <p id="message"></p>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

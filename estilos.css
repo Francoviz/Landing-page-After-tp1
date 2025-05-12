@@ -1,0 +1,372 @@
+
+
+h1
+{
+        font-family: "Big Shoulders","Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+      
+}
+h2,h3
+{
+        font-family: "Big Shoulders","Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      
+}
+body {
+    font-family: "Big Shoulders",Arial, sans-serif;
+    margin: 0 16px;
+    background-color: #272B36;
+}
+*{
+text-decoration: none;
+}
+/* Marca */
+.marca {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    /*justify-content: center; /* Centra horizontalmente */
+    justify-content: flex-start; /* Mueve los elementos al borde izquierdo */
+    gap: 10px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.logo {
+    width: 300px; /* Mantiene el tamaño original */ 
+}
+
+.letraslogo {
+    width: 250px;
+    padding-bottom: 0; /* Eliminamos el exceso de espacio */
+}
+
+.social-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Flexbox para la sección introductoria */
+.contenedor-intro {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio (superior) */
+    gap: 20px;
+}
+
+.intro iframe {
+    max-width: 100%;
+}
+.intro2 {
+    position: relative;
+    background-image: url(./image\ 5.png); /* Reemplaza con la URL de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ajusta el tamaño para ocupar toda la pantalla */
+    text-align: center; /* Centra el texto */
+}
+
+.contenedor-intro {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos uno debajo del otro */
+    align-items: center; /* Centra el texto horizontalmente */
+    border-radius: 10px;
+    max-width: 35%;
+}
+.titulo{
+    margin-top: 0%;
+    margin-bottom: 0; /* Reduce el espacio entre el título y el subtítulo */
+    font-weight: 900;
+    font-size: 64px;
+    text-align: center;
+    color: black;
+}
+.subtitulo{
+    margin-top: 0; /* Elimina el espacio extra arriba */
+    margin-bottom: 0%;
+     line-height: 1; /* Hace que el texto esté lo más pegado posible */
+    font-weight: 300;
+    font-size: 36px;
+    text-align: start;
+    color: black;
+}
+.mensaje {
+    flex: 1;
+    align-self: flex-start; /* Mantiene el mensaje alineado con el borde superior del video */
+    margin-top: 10px;
+}
+.contenedor-intro p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+   font-size: larger;
+   margin-bottom: 0%;
+}
+#subparrafo{
+     margin-top: 0%;
+     font-weight: 400;
+     align-self: start;
+}
+
+.beneficios{
+    background-color: #414653;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+/* Grid para la sección de beneficios */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+   
+}
+.beneficios h2{
+    padding-bottom: 20px;
+}
+.beneficios li {
+
+    background-color: #333D59;
+    padding: 42px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 200px;
+}
+li{
+    color:bisque;
+    font-family: "Roboto", sans-serif;
+    border-radius: 25px;
+    width: 300px;
+    height: 100px;
+    font-size:28px;
+}
+/* Flexbox para los bullets */
+.info {
+    padding: 80px;
+    color: white;
+}
+
+.bullets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Reduce la separación entre el texto y la imagen */
+}
+
+.text-content {
+    max-width: 30%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Esto mueve el texto a la derecha */
+}
+.text-content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-right: 0%;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info img {
+    width: 35%;
+    max-width: 400px;
+}
+
+@media (max-width: 828px) {
+    .bullets {
+        flex-direction: column;
+    }
+    .marca {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    .letraslogo {
+        width: 200px;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* Estilos de carrusel */
+.testimonios {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #333D59; /*esto es para el color del fondo del carrusel */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px; /*esto es para aumentar el tamaño de letra */
+    font-style: italic;
+    border-left: 3px solid #ccc;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+/* Botones de carrusel */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10; /* Asegúra de que los botones estén por encima de los Slides */
+}
+
+.carousel-button.prev { left: 10px; }
+.carousel-button.next { right: 10px; }
+
+/* Contenedor principal */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background-color: #21252F;
+    border-radius: 15px;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+.formulario p{
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.titulofinal{
+    color: white;
+     font-family: "Big Shoulders","Roboto", sans-serif;
+     font-size: 100px;
+     font-weight: bolder;
+}
+/* Título centrado */
+.formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Estilo del contenedor de inputs */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background-color: #21252F;
+    border-radius: 10px;
+    width: 100%;
+    align-content: center;
+}
+
+/* Inputs y textarea */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #1c1e22;
+    border-radius: 15px;
+    border: 2px solid #444;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Contenedor de checkboxes */
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Separación individual para cada checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #333D59;
+    border-radius: 15px;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #333D59;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Efecto hover */
+button:hover {
+    background-color: rgb(49, 2, 80);
+}
+
+/* Mensaje de confirmación */
+#message {
+    font-size: 1rem;
+    color: lightgreen;
+    margin-top: 15px;
+    text-align: center;
+}
