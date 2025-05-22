@@ -20,7 +20,8 @@ h2,h3
 body {
     font-family: "Big Shoulders",Arial, sans-serif;
     margin: 0 16px;
-    background-color: #272B36;
+   /* background-color: #272B36;*/
+     background: linear-gradient(to bottom, #272B36 54%, #22293B 47%);
 }
 *{
 text-decoration: none;
@@ -130,6 +131,8 @@ text-decoration: none;
    
 }
 .beneficios h2{
+    font-size: 32px;
+    font-weight:700;
     padding-bottom: 20px;
 }
 .beneficios li {
@@ -137,24 +140,30 @@ text-decoration: none;
     background-color: #333D59;
     padding: 42px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     height: 200px;
+    
+}
+.beneficios p{
+    font-size: 50px;
+    margin:0%
 }
 li{
     color:bisque;
     font-family: "Roboto", sans-serif;
     border-radius: 25px;
-    width: 300px;
+    width: 250px;
     height: 100px;
-    font-size:28px;
+    font-size:24px;
 }
 /* Flexbox para los bullets */
 .info {
     padding: 80px;
     color: white;
+
 }
 
 .bullets {
@@ -189,34 +198,135 @@ li{
 }
 
 @media (max-width: 828px) {
-    .bullets {
-        flex-direction: column;
+    body{
+         background: linear-gradient(to bottom, #272B36 58%, #22293B 47%);
     }
+    /* Ajustar logo y letraslogo para que se superpongan centrados */
     .marca {
+        position: relative;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     
     .logo {
-        width: 120px;
+        width: 200px;
+        position: absolute;
+        top: 20px;
+        z-index: 2;
     }
     
     .letraslogo {
-        width: 200px;
-        padding-bottom: 10px;
+        width: 180px;
+        position: absolute;
+        top: 160px;
+        z-index: 3;
     }
+
+    /* Colocar los íconos debajo del logo */
+    .social-buttons {
+        margin-top: 180px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 0%;
+    }
+    .social-buttons img{
+        width: 20px;
+    }
+
+    /* Mover image 5 debajo de los íconos y que tenga dentro solo el texto "AFTER ESTÁ DE VUELTA" */
+    .intro2 {
+        display: flex;
+        justify-content: center;
+        align-items:start;
+        background-size: contain;
+        background-position: top;
+        text-align: center;
+    }
+
+    .contenedor-intro {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .contenedor-intro p {
+        font-size: 16px;
+    }
+
+    .titulo {
+        font-size: 48px;
+        color: black;
+        padding-bottom: 0%;
+    }
+    .subtitulo{
+        margin-top: 0%;
+
+    }
+    .contenedor-intro p{
+        display: block;
+        text-align: center;
+        padding-top: 120px;
+        color: white;
+    }
+    /* Mover el texto restante debajo de image 5 */
+    .contenedor-intro p#subparrafo {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* Beneficios en formato vertical */
+    .beneficios-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+    }
+ .beneficios-grid li{
+       padding: 20px;
+       margin-left: 46px;
+       margin-bottom: 16px;
+       text-align:center;
+    }
+    /* Mover image 28 arriba del texto */
+    .bullets {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info img {
+        width:fit-content;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        text-align: center;
+        max-width: 100%;
+    }
+ 
 }
+
 
 
 /* Estilos de carrusel */
 .testimonios {
     position: relative;
-    width: 80%;
+    width: 85%;
     height: 400px;
     margin: auto;
     overflow: hidden;
+    border-radius: 46px;
     background-color: #333D59; /*esto es para el color del fondo del carrusel */
+    align-content: center;
 }
 
 .carousel {
@@ -226,18 +336,18 @@ li{
 }
 
 .carousel-slides {
-    display: flex;
+    display: center;
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
 
 .carousel-slide {
     min-width: 100%;
-    padding: 20px;
     text-align: center;
     font-size: 25px; /*esto es para aumentar el tamaño de letra */
+    font-family: "Roboto", sans-serif;
     font-style: italic;
-    border-left: 3px solid #ccc;
+      /*border-left: 3px solid #ccc; */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
@@ -308,12 +418,16 @@ li{
     border-radius: 10px;
     width: 100%;
     align-content: center;
+    padding-left: 1.5%;
+
 }
+
 
 /* Inputs y textarea */
 input[type="text"], 
 input[type="email"], 
 textarea {
+    font-family: "Roboto", sans-serif;
     width: 95%;
     padding: 20px;
     margin-bottom: 20px;
@@ -338,6 +452,7 @@ textarea {
 
 /* Separación individual para cada checkbox */
 .checkbox-group {
+    font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
     padding: 12px;
