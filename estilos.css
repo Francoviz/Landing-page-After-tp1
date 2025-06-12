@@ -29,27 +29,31 @@ text-decoration: none;
 
 .logo {
     width: 150px; /* Mantiene el tamaño original */
-    padding-top: 40px;
+    align-self: center;
 }
 
 .letraslogo {
     width: 150px;
     padding-bottom: 0; /* Eliminamos el exceso de espacio */
-    filter:brightness(0);
+    /*filter:brightness(0);*/
     margin-bottom: 0%;
 }
 .letraslogo2{
     display: none;
 }
 .botoninicio{
-    height: 56px;
-    width: 136px;
+    position: absolute;
+    bottom: -68.5px; /* Ajusta este valor según la proximidad deseada */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 137px;
+    width: 461px;
     border-radius: 16px;
-    background-color: #333D59;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    background-color: #637DC3;
+    font-size: 54px;
+    font-family: "Big Shoulders",Arial, sans-serif;
+    font-weight:bolder;
     color: white;
-    font-size: 16px;
     border: none;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -64,7 +68,7 @@ text-decoration: none;
 /* Flexbox para la sección introductoria */
 .contenedor-intro {
     display: flex;
-    align-items: flex-start; /* Alinea los elementos al inicio (superior) */
+    align-items: center; /* Alinea los elementos al inicio (superior) */
     gap: 10px;
 }
 
@@ -80,9 +84,10 @@ text-decoration: none;
     background-repeat: no-repeat;
     display:flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: flex-start; /* Centra verticalmente */
+    align-items: center; /* Centra verticalmente */
     height: 100vh; /* Ajusta el tamaño para ocupar toda la pantalla */
     text-align: center; /* Centra el texto */
+    margin-bottom: 460px;
 }
 
 .contenedor-intro {
@@ -90,7 +95,7 @@ text-decoration: none;
     flex-direction: column; /* Organiza los elementos uno debajo del otro */
     align-items: center; /* Centra el texto horizontalmente */
     border-radius: 10px;
-    max-width: 39%;
+    max-width: 100%;
 }
 .titulo{
     margin-top: 0%;
@@ -106,7 +111,7 @@ text-decoration: none;
     padding-bottom: 0%;
      line-height: 1; /* Hace que el texto esté lo más pegado posible */
     font-weight: 500;
-    font-size: 36px;
+    font-size: 64px;
     text-align: start;
     color: black;
 }
@@ -122,12 +127,29 @@ text-decoration: none;
    margin-bottom: 0%;
 }
 #subparrafo{
+     position: absolute;
+    bottom: -175px; /* Ajusta este valor según la proximidad deseada */
+    left: 50%;
+    transform: translateX(-50%);
      margin-top: 0%;
-     font-weight: 400;
+       white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+     font-weight: 600;
      align-self: start;
+     font-family: "Big Shoulders",Arial, sans-serif;
+     font-size: 64px;
+     color: white;
 }
 #subparrafo1{
      margin-top: 0%;
+      position: absolute;
+    bottom: -310px; /* Ajusta este valor según la proximidad deseada */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "Roboto",Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 .beneficios{
     background-color: #414653;
@@ -144,8 +166,9 @@ text-decoration: none;
    
 }
 .beneficios h2{
-    font-size: 32px;
-    font-weight:700;
+     font-family: "Big Shoulders",Arial, sans-serif;
+     font-size: 64px;
+     font-weight: bold;
     padding-bottom: 20px;
 }
 .beneficios li {
@@ -182,10 +205,11 @@ padding-bottom: 120px;
 
 .bullets {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     gap: 20px; /* Reduce la separación entre el texto y la imagen */
 }
+
 
 .text-content {
     max-width: 55%;
@@ -195,12 +219,13 @@ padding-bottom: 120px;
     align-items: flex-end; /* Esto mueve el texto a la derecha */
 }
 .text-content h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-family: "Big Shoulders",Arial, sans-serif;
+    font-size: 54px;
+    font-weight: bold;
     margin-bottom: 10px;
     text-align: left;
     margin-left: 0%;
-    padding-right: 195px;
+   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
 .text-content p {
@@ -586,6 +611,7 @@ color: white;
         font-size: 32px;
         padding-right: 0%;
         text-align: center;
+        margin-top: 0px;
     }
     .text-content {
         text-align: center;
