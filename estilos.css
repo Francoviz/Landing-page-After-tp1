@@ -167,6 +167,7 @@ white-space: nowrap; /* Evita que el texto se divida en varias líneas */
      font-size: 64px;
      font-weight: bold;
     padding-bottom: 20px;
+    text-align: center;
 }
 .beneficios li {
 
@@ -366,13 +367,14 @@ border-top-right-radius: 24px
      font-size: 100px;
      font-weight: bolder;
 }
-/* Título centrado */
+
+/* Título centrado 
 .formulario h2 {
     font-size: 2rem;
     margin-bottom: 25px;
     text-align: center;
 }
-
+*/
 /* Estilo del contenedor de inputs */
 .input-container {
     display: flex;
@@ -498,7 +500,7 @@ margin-top: 0%;
 
     .intro2 {
         position: relative;
-        background-image: url(./image\ 7.png);
+        background-image: url(./image\ 8.png);
         background-size: contain;
         background-position:top;
         background-repeat: no-repeat;
@@ -511,6 +513,7 @@ margin-top: 0%;
         gap: 5px;
         height: max-content;
         padding-bottom: 60px;
+        margin-bottom: 360px;
     }
 
     .intro2 .logo {
@@ -538,8 +541,8 @@ margin-top: 0%;
     }
 
     .intro2 .subtitulo {
-        font-size: 36px;
-        font-weight: 300;
+        font-size: 24px;
+        font-weight: 900;
         width: 100%;
         text-align:center;
         /*position: absolute;*/
@@ -552,11 +555,12 @@ margin-top: 0%;
     }
 
     .contenedor-intro {
+        width: 300px;
         position: relative;
         display: flex;
         flex-direction: column; /* Organiza los elementos debajo */
         align-items: center;
-        max-width: 95%;
+        max-width: 80%;
         margin-top: 10px; /* Espaciado debajo de `.intro2` */
     }
 #subparrafo1{
@@ -564,16 +568,38 @@ margin-top: 0%;
     font-weight: bold;
     font-size: 16px;
     color: white;
+    width: 60%vh;
+    text-align: center;
 }
 #subparrafo{
+display: block;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
     padding-bottom: 10px;
+   
+}
+.subparrafo span::after {
+content: "\A"; /* Inserta un salto de línea */
+   white-space: pre; /* Permite que el salto de línea se renderice */
+    display: block; /* Asegura que el salto de línea se visualice */
+    margin-bottom: -20px; /* Reduce el espacio de separación */
+}
+
+.bullets img{
+
+  width: 414px;
+  height: 414px;
+  object-fit: contain;
+
 }
 .botoninicio{
     border:2px solid white;
+    height: 56px;
+    width: 117px;
+    bottom: -49px;
+    font-size: 16px;
 }
     .titulo {
         font-size: 64px;
@@ -597,20 +623,25 @@ margin-top: 0%;
         text-align: center;
      
     }
-
+.beneficios {
+       height: max-content;
+       padding-bottom: 350px;
+    }
     .beneficios-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 200px;
+        width: 303px;
+        height: 186px;
     }
     .beneficios h2{
         font-family: "Roboto",sans-serif;
         font-weight: bold;
-        font-size: 32px;
+        font-size: 24px;
         width: 60%;
         text-align: center;
-        padding-left: 75px;
+        padding-left: 60px;
+        white-space: nowrap;
     }
     .beneficios h2{
        margin-bottom: 20px;
@@ -620,6 +651,8 @@ margin-top: 0%;
         margin-left: 46px;
         margin-bottom: 16px;
         text-align: center;
+        font-size: 16px;
+        font-weight: 500;
     }
 
     .bullets {
@@ -639,7 +672,23 @@ margin-top: 0%;
         padding-top: 60px;
         padding-left: 0px;
         padding-right: 0px;
+        padding-bottom: 0%;
     }
+    .text-content h2 {
+    font-family: "Big Shoulders",Arial, sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 0%;
+    margin-top: 0%;
+   white-space:wrap;
+}
+.nerdo{
+    object-fit: cover; 
+    margin: 0; 
+    padding: 0;
+}
 #infotitulo{
         font-family: "Roboto",sans-serif;
         font-weight: 500;
@@ -652,6 +701,7 @@ margin-top: 0%;
         max-width: 100%;
 
     }
+    
     .info p{
        font-family: "Roboto",sans-serif;
         font-weight: 300;
@@ -662,15 +712,22 @@ margin-top: 0%;
     .Flan{
     font-weight:bolder;
     }
+    #algunos{
+        font-size: 24px;
+    }
   .testimonios {
         height: 180px; /* Reducimos altura para mejorar proporciones en móvil */
         width: 95%; /* Hacemos que ocupe más espacio */
     }
-
+.carousel-slides {
+        height: 194px;
+       
+    }
     .carousel-slide {
-        font-size: 18px; /* Reducimos tamaño de texto para mejor legibilidad */
+        font-size: 14px; /* Reducimos tamaño de texto para mejor legibilidad */
         font-family: "Roboto", sans-serif;
         font-style: italic;
+        padding-top: 10%;
     }
 
     .carousel-button {
@@ -712,13 +769,49 @@ margin-top: 0%;
     transform: translateX(-50%);
     }
 .formulario{
-    background: none;
+    clip-path: inset(0px 0px 30px 0px) !important; /* Recorte: Arriba, Derecha, Abajo, Izquierda */
+
     width: 95%;
     padding-right: 0%;
     padding-left: 0%;
 }
+.formulario > * {
+   position: relative;
+   z-index: 1; /* Mantiene el contenido visible sobre el fondo recortado */
+   color: white; /* Ajuste visual para contraste */
+}
+.titulofinal{
+    color: white;
+     font-family: "Big Shoulders","Roboto", sans-serif;
+     font-size: 32px;
+     font-weight: bolder;
+}
+.titulofinal span::after {
+   content: "\A"; /* Inserta un salto de línea */
+   white-space: pre; /* Permite que el salto de línea se renderice */
+    display: block; /* Asegura que el salto de línea se visualice */
+    margin-bottom: -20px; /* Reduce el espacio de separación */
+}
+p strong::before {
+   content: "Si querés recibir por anticipado el acceso AFTER, podés completar este formulario para que Flan te escriba y recibir.";
+   display: block;
+   visibility: visible; /* Muestra el nuevo contenido */
+   position: absolute; /* Lo posiciona sobre el original */
+   left: 0;
+   white-space: pre-line; /* Permite el salto de línea */
+}
+
+p strong {
+   visibility: hidden; /* Oculta el texto original */
+   position: relative;
+}
+p::before {
+   visibility: visible;
+   position: absolute;
+   left: 0;
+}
 .formulario p{
-    padding-bottom: 80px;
+    padding-bottom: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-weight: 400;
@@ -755,5 +848,26 @@ button[type="submit"] {
     height: 57px;
     width: auto;
 }
+  footer {
+        display: flex;
+        flex-direction: column; /* Organiza los elementos en vertical */
+        align-items: center;
+        text-align: center;
+        gap: 20px; /* Espaciado entre elementos */
+    }
+
+    .footer-text {
+        font-size: 24px;
+        order: -1; /* Mueve el texto "SEGUINOS EN NUESTRAS REDES" antes de la imagen */
+    }
+
+    .flanfinal {
+        order: 0; /* Coloca la imagen después del texto */
+        /* Ajusta tamaño si es necesario */
+    }
+
+    .social-buttons {
+        order: 1; /* Asegura que los íconos estén debajo de la imagen */
+    }
 }
 
