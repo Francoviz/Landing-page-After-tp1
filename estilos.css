@@ -19,9 +19,9 @@ body {
     font-family: "Big Shoulders",Arial, sans-serif;
     margin: 0 16px;
    background: #272B36;
-background: linear-gradient(rgba(39, 43, 54, 1) 45.5%, 
-rgba(34, 41, 59, 1) 45.5%,
- rgba(34, 41, 59, 1) 93.5%, rgba(39, 43, 54, 1) 93.5%);
+background: linear-gradient(rgba(39, 43, 54, 1) 43.5%, 
+rgba(34, 41, 59, 1) 43.5%,
+ rgba(34, 41, 59, 1) 94.5%, rgba(39, 43, 54, 1) 94.5%);
 }
 *{
 text-decoration: none;
@@ -805,14 +805,18 @@ content: "\A"; /* Inserta un salto de línea */
     margin-bottom: -20px; /* Reduce el espacio de separación */
 }
 p strong::before {
-   content: "Si querés recibir por anticipado el acceso AFTER, podés completar este formulario para que Flan te escriba y recibir.";
+   content: "Si querés recibir por anticipado el acceso AFTER, podés completar este formulario para que Flan te escriba y recibir. \a \a \a \a";
+   
    display: block;
    visibility: visible; /* Muestra el nuevo contenido */
    position: absolute; /* Lo posiciona sobre el original */
    left: 0;
    white-space: pre-line; /* Permite el salto de línea */
 }
-
+.palurdo{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
 p strong {
    visibility: hidden; /* Oculta el texto original */
    position: relative;
