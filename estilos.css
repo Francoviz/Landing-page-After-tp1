@@ -21,7 +21,9 @@ body {
     font-family: "Big Shoulders",Arial, sans-serif;
     margin: 0 16px;
    background: #272B36;
-background: linear-gradient(rgba(39, 43, 54, 1) 44%, rgba(34, 41, 59, 1) 44%, rgba(34, 41, 59, 1) 96%, rgba(39, 43, 54, 1) 96%);
+background: linear-gradient(rgba(39, 43, 54, 1) 47.5%, 
+rgba(34, 41, 59, 1) 47.5%,
+ rgba(34, 41, 59, 1) 93.5%, rgba(39, 43, 54, 1) 93.5%);
 }
 *{
 text-decoration: none;
@@ -58,12 +60,7 @@ text-decoration: none;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.social-buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
+
 
 /* Flexbox para la sección introductoria */
 .contenedor-intro {
@@ -225,12 +222,16 @@ padding-bottom: 120px;
     margin-bottom: 10px;
     text-align: left;
     margin-left: 0%;
+    margin-top: 0%;
    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
 .text-content p {
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
+    font-size: 32px;
     margin-bottom: 10px;
+    font-family: "Roboto",Arial, sans-serif;
+    font-weight: 500;
 }
 
 .info img {
@@ -240,13 +241,15 @@ padding-bottom: 120px;
 #algunos{
     margin-top: 100px;
     padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 64px;
 }
 
 /* Estilos de carrusel */
 .testimonios {
     position: relative;
-    width: 85%;
-    height: 592px;
+    width: 688px;
+    height: 370px;
     margin: auto;
     overflow: hidden;
     border-radius: 46px;
@@ -272,9 +275,8 @@ padding-bottom: 120px;
 .carousel-slide {
     min-width: 100%;
     text-align: center;
-    font-size: 25px; /* Tamaño de letra */
+    font-size: 32px; /* Tamaño de letra */
     font-family: "Roboto", sans-serif;
-    font-style: italic;
     color: white;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -297,7 +299,7 @@ padding-bottom: 120px;
     align-items: center; /* Asegura que los botones estén alineados */
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     margin-top: 30px; /* Ajusta el espacio entre el carrusel y los botones */
-    margin-bottom: 40px;
+    margin-bottom: 152px;
 }
 
 /* Estilo de los botones */
@@ -450,12 +452,45 @@ button:hover {
     text-align: center;
 }
 footer{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
 height: 150px;
-padding-top: 5%;
-font-family: "Big Shoulders","Roboto", sans-serif;
-font-size: 24px;
-color: white;
+padding-top: 10%;
+padding-bottom: 72px;
 }
+.footer-content{
+    margin-top: 0%;
+    gap: 10px;
+    align-items: center;
+}
+.footer-text{
+    font-family: "Big Shoulders","Roboto", sans-serif;
+text-align: left;
+font-size: 54px;
+color: white;
+margin-bottom: 20px;
+margin-top: 0%;
+}
+footer img{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+.flanfinal{
+    height: 200px;
+}
+.social-buttons{
+margin-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 @media (max-width: 828px) {
     body {
         background: linear-gradient(to bottom, #272B36 76%, #22293B 20%);
@@ -611,7 +646,6 @@ color: white;
         font-size: 32px;
         padding-right: 0%;
         text-align: center;
-        margin-top: 0px;
     }
     .text-content {
         text-align: center;
