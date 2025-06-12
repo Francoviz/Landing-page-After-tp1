@@ -848,7 +848,7 @@ p::before {
 }
 
  input[type="checkbox"] {
-    transform: scale(2.5); /* Ajusta el tamaño del check */
+    transform: scale(1.5); /* Ajusta el tamaño del check */
     margin-right: 10px; /* Espacio entre checkbox y texto */
 }
 button[type="submit"] {
